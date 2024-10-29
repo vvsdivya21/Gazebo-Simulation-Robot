@@ -1,0 +1,13 @@
+twist_mux:
+ ros2_parameters:
+  topics:
+    - name    : "teleop"
+      topic   : "/teleop_cmd_vel"
+      frame_id: "base_footprint"
+      timeout : 0.1
+      priority: 20
+    - name    : "nav"
+      topic   : "/nav_cmd_vel"
+      frame_id: "base_footprint"
+      timeout : 0.1
+      priority: 10
